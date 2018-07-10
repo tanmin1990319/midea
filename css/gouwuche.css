@@ -1,0 +1,305 @@
+bady{
+    background:#f4f4f4;
+}
+.header{
+    width:100%;
+    height:44px;
+    background:#0092d8;
+ }
+ .header-lf{
+    float:left;
+ }
+ .header .header-lf ul {
+ overflow: hidden;
+ }
+ .header-lf ul li{
+    float:left;
+    text-align: center;
+    line-height:44px;
+ }
+ .header-lf ul li:first-child{
+   color:white;
+ }
+ .header-lf ul li a{
+    display: block;
+ font-size:12px;
+ color:#a3c3e6;
+ }
+ .header-lf ul li a:hover{
+    color:white;
+ }
+ .header-lf ul li:nth-child(1){
+    width:120px;
+    height:44px;
+    font-size:26px;
+ }
+ .header-lf ul li:nth-child(2){
+    width:88px;
+ }
+ .header-lf ul li:nth-child(3){
+    width:108px;
+ }
+ .header-lf ul li:nth-child(4){
+    width:108px;
+ }
+ .header-lf ul li:nth-child(5){
+    width:108px;
+ }
+ 
+ .header-rg{
+    float:right;
+ }
+ .header-rg ul li{
+    float:left;
+    line-height:44px;
+    text-align: center;
+    font-size:16px;
+    color:white;
+ }
+ .header-rg ul li:nth-child(1){
+    width:75px;
+ }
+ 
+ .header-rg ul li:nth-child(2){
+    width:65px;
+ }
+ 
+ .header-rg ul li:nth-child(3){
+     width:65px;
+ }
+ 
+ .header-rg ul li:nth-child(4){
+     width:86px;
+ }
+ .header-rg ul li:hover{
+     background:blue;
+  }
+  /* 头部隐藏部分开始 */
+  ._seach{
+    display: none;
+    width:180px;
+    height:44px;
+    position: absolute;
+    right:216px;
+  }
+  ._seach input{
+    width:0;
+    height:100%;
+    border:none;
+    background:white;
+  }
+  ._weixin{
+    position:absolute;
+    z-index: 1;
+    right:151px;
+    top:44px;
+    display:none;
+  }
+  ._shoppingcart{
+    display:none;
+    width:188px;
+    position: absolute;
+    right:86px;
+    top:44px;
+    z-index: 1;
+  }
+  ._shoppingcart ul li{
+    font-size:12px;
+   background:white;
+   line-height:40px;
+   border-bottom:1px solid #e0e0e0;
+  }
+  ._shoppingcart ul li:hover{
+    background:gray;
+  }
+  ._login{
+    display:none;
+    width:260px;
+    background:white;
+    position: absolute;
+    right:0;
+    top:44px;
+    z-index:1;
+  }
+  ._login ul li{
+    line-height:34px;
+    text-indent: 4rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  ._login ul li:hover{
+   background:#e0e0e0;
+ }
+ /* header结束 */
+ /* announcement开始 */
+.announcement{
+    width: 100%;
+    height:24px;
+    line-height:24px;
+    font-size:12px;
+    text-align: center;
+    background:#003b66;
+    color:#ffffff;
+ }
+ /* announcement结束 */
+ .shopping{
+     width:100%;
+     line-height:80px;
+     border-bottom:1px solid #e0e0e0;
+     overflow: hidden;
+ }
+ .shopping h2{
+     float:left;
+     font-weight:normal;
+ }
+ .shopping form{
+     float:right;
+     font-size:12px;
+ }
+ /* 版心 */
+ .main{
+    width:1200px;
+    margin:0 auto;
+    height:2842px;
+    position: relative;
+ }
+ .buyall , .official {
+     background:white;
+     height:40px;
+     margin:20px 0;
+     font-size:12px;
+     border:1px solid #e0e0e0;
+ }
+ .buyall form {
+     margin-left: 12px;
+     float:left;
+     line-height:40px;
+ }
+ .buyall form span{
+     margin:0 12px;
+ }
+ .buyall ul  {
+     float:left;
+     color:#e0e0e0;
+     line-height:40px;
+ }
+ .buyall ul li {
+     float:left;
+     margin:0 66px;
+ }
+ .buyall ul li:first-child{
+     margin:0 130px;
+ }
+ .official{
+     line-height:40px;
+ }
+ .official form {
+     margin-left:10px;
+ }
+ .official form span{
+     padding:0 6px;
+     margin:0 6px ;
+     background:#0092d8;
+ }
+ .wantbuy{
+     padding:20px;
+     width:1160px;
+     min-height:78px;
+     background:#fffceb;
+     line-height: 20px;
+     border:1px solid #e0e0e0;
+     font-size: 12px;
+ }
+ .wantbuy form{
+     float:left;
+ }
+ .wantbuy  button{
+     cursor: pointer;
+     border:1px solid #e0e0e0;
+     background:white;
+ }
+ .wantbuy ul li {
+     float:left; 
+     width:140px;
+     padding-left:14px;  
+ }
+ .wantbuy ul li:nth-child(1){
+     width:360px;
+ }
+ .wantbuy ul li:nth-child(2) span{
+     display: block;
+ }
+ .wantbuy ul li:nth-child(3) span{
+    display: block;
+}
+.wantbuy ul li:nth-child(3)  a{
+    color:#fe6600;
+}
+.wantbuy ul li:nth-child(4) button{
+    width:20px;
+    height:22px;
+    float:left;
+    font-size:18px;
+}
+.wantbuy ul li:nth-child(4) span{
+    display: block;
+    height:20px;
+    float:left;
+    padding:0 8px;
+    border:1px solid #e0e0e0;
+}
+.wantbuy ul li:nth-child(5) span{
+    color:#fe6600;
+}
+.wantbuy ul li:nth-child(6) button{
+    display: block;
+}
+.computed{
+    margin-top:12px;
+    height:60px;
+    background:white;
+    border:1px solid #e0e0e0;
+    overflow: hidden;
+    font-size:12px;
+}
+.computed form{
+    margin-top:20px;
+    float:left;
+    margin-left:10px;
+}
+.computed form span{
+    margin-left:10px;
+}
+.computed button{
+    cursor: pointer;
+    border:none;
+    background:white;
+}
+.computed ul li{
+    float:left;
+    width:138px;
+    padding-left:10px;
+    margin-top:20px;
+}
+.computed ul li:nth-child(3){
+    margin-right:230px;
+}
+.computed ul li:nth-child(4) span{
+    color:#fe6600;
+    margin:0 6px;
+}
+.computed ul li:nth-child(5) span:nth-child(1){
+    font-size:16px;
+    color:#fe6600;
+    padding-right:40px;
+}
+.computed ul li:nth-child(5){
+    margin-top:10px;
+}
+.computed ul li:nth-child(6){
+    margin-top:0;
+}
+.computed ul li:nth-child(6) button{
+    width:100%;
+    height:60px;
+    background:#fe6600;
+}
