@@ -160,6 +160,7 @@ color:#a3c3e6;
 /*hot开始*/
 .hot {
    position:absolute;
+   z-index: 1;
 }
 .hot ul{
    padding-top:12px;
@@ -260,6 +261,30 @@ color:#a3c3e6;
 .autoplay{
    width:100%;
    height:480px;
+   overflow: hidden;
+}
+.autoplay ul{
+  height:480px;
+}
+.autoplay ul li{
+  float:left;
+}
+.ulbox_lb {
+  height:16px;
+  position: absolute;
+  top:400px;
+  left:600px;
+}
+.ulbox_lb li{
+  width:16px;
+  height:16px ;
+  border-radius: 50%;
+  margin-right:15px;
+  background:greenyellow;
+  float:left;
+}
+.ulbox_lb .current{
+  background:red;
 }
 /* rec_wrap开始 */
 .rec_wrap{

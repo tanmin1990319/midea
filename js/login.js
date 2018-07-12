@@ -12,7 +12,7 @@
             $.post('../php/login.php',$params,function(json){
                 $json =json;
                 if(json.code==200){
-                    location.href='../midea/midea.html';
+                    location.href='../midea/gouwuche.html';
                 }
                 else{
                     $('.login form span').eq(1).html(json.msg).css('color','red');
@@ -38,6 +38,7 @@
         }
         var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
         var myreg1=/^[A-Za-z0-9]{6,16}$/;
+        $('.registe  form span').eq(0).html('');
         if($params.name==''){
             $('.registe  form span').eq(0).html('手机号未输入').css('color','red');
             return;
@@ -53,9 +54,7 @@
                         $json=json;
                         console.log($json)
                             if($json.code==200){
-                                // $('.registe  form span').eq(0).html($json.msg).css('color','red');
-                                alert($json.msg)
-                                location.href='../midea/midea.html'
+                                location.href='../midea/gouwuche.html';
                             }else{
                                 $('.registe  form span').eq(0).html($json.msg).css('color','red');
                             }

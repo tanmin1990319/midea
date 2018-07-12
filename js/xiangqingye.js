@@ -1,4 +1,5 @@
 (function(){
+    //与首页公用头部样式开始
     $('.header-rg li').on('mouseenter',function(){
         if($(this).index()==0){
              $('._seach').css('display','block');
@@ -89,41 +90,44 @@
     $('.memberarea img').on('mouseleave',function(){
         $(this).animate({top:'0px'})
     })
-    //-------------轮播图------------------
-    var fade=(function (){
-        var timer;
-        var index=0;
-        var $ulBox = $('.ul_imgbox');
-        var $ulbox_lb = $('.ulbox_lb');
-        return {
-            init(){
-                fade.event()
-                fade.autoplay()
-            },
-            showImg(){
-                $ulbox_lb.find('li').eq(index).addClass('current').siblings().removeClass('current');
-                $ulBox.children('li').eq(index).fadeIn().siblings().fadeOut();
-            },
-            event(){
-                $ulbox_lb.find('li').on('mouseenter',function(){
-                $ulbox_lb.children('li').eq(index).addClass('current').siblings().removeClass('current');
-                $ulBox.children('li').eq(index).fadeIn().siblings().fadeOut();
-                index= $(this).index();
-               })
-            },
-            autoplay(){
-                clearInterval(timer);
-                 timer= setInterval(function(){
-                     if(index==5){
-                         index=0
-                     }
-                     fade.showImg()
-                  index++
-                  
-                 },3000)
-            }
-        }
-      })()
-      fade.init();
+    //--------------与头部公用的样式结束------------------
+    //放大镜
+   $('.bigimg').on('mouseover',function(){
+        $('.mirror').css('display','block');
+        $('.largestimg').css('display','block');
+   })
+   $('.bigimg').on('mouseout',function(){
+        $('.mirror').css('display','none');
+        $('.largestimg').css('display','none');
+   })
+   $('.bigimg').on('mousemove',function(ev){
+    ev = ev || window.event
+    // 获取移动后，小盒子的位置
+    var l = ev.clientX - $('.bigimg').offset().left - $('.mirror').width() / 2;
+    var t = ev.clientY - $('.bigimg').offset().top - $('.mirror').height() / 2;
+    // 获取最大边界
+    console.log($('.bigimg').width())
+    var maxL = $('.bigimg').width() - $('.mirror').width();
+    var maxT = $('.bigimg').height() - $('.mirror').height();
+    //边界处理
+    if(l > maxL) {
+        l = maxL;
+    } else if(l < 0) {
+        l = 0;
+    }
+    if(t > maxT) {
+        t = maxT;
+    } else if (t < 0) {
+        t = 0;
+    }
+    $('.mirror').css('left',l);
+    $('.mirror').css('top',t);
+    $('.showcase_inner').css('left',-2*l);
+    $('.showcase_inner').css('top',-2*t);
+   })
+   //--------点击图片切换大盒子与放大镜里的图片
+   $('.smallimg img').on('click',function(){
+      $('#showcase').attr('src',$(this).attr('src')) ;
+      $('.changeimg').attr('src',$(this).attr('src')) ;
+   })
 })()
-
