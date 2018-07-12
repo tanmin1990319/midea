@@ -78,12 +78,15 @@ color:#a3c3e6;
    height:44px;
    position: absolute;
    right:216px;
+   top:0;
+   z-index: 1;
  }
  ._seach input{
-   width:0;
+   width:180px;
    height:100%;
    border:none;
    background:white;
+   color:#e0e0e0;
  }
  ._weixin{
    position:absolute;
@@ -123,7 +126,7 @@ color:#a3c3e6;
    text-indent: 4rem;
    border-bottom: 1px solid #e0e0e0;
  }
- ._login ul li:nth-child(7) a{
+ ._login ul li:nth-child(6) a{
   display: block;
   width:100%;
  }
@@ -184,6 +187,7 @@ color:#a3c3e6;
   opacity: 1;
 }
 .commondity{
+  display: none;
   text-indent: 1rem;
   height:480px;
   width:600px;
@@ -193,6 +197,9 @@ color:#a3c3e6;
   left:220px;
   top:0;
   z-index:1;
+}
+.commondity a:hover{
+  color:red;
 }
 .commondity_lf{
   height:100%;
@@ -263,7 +270,6 @@ color:#a3c3e6;
 .rec_wrap ul{
    overflow: hidden;
    border-bottom: 1px solid #e0e0e0;
-
 }
 .rec_wrap ul li{
    padding-top:15px;
@@ -279,6 +285,9 @@ color:#a3c3e6;
    padding-left:50px;
    display: block;
    width:100%;
+}
+.rec_wrap ul li a img{
+  position: relative;
 }
 /* starbox开始 */
 .starbox{
@@ -302,15 +311,19 @@ display: block;
 .starbox ul li{
    float:left;
 }
-
+.starbox img{
+  position: relative;
+}
 .starLt , .starRt , .starLb , .starRb{
   float:left;
   width:600px;
   height:683px;
 }
 .starLt{
-  width:598px;
-  height:681px;
+  width:568px;
+  height:651px;
+  padding-left:30px;
+  padding-top:30px;
   border:1px solid #e0e0e0;
 }
 .starRt ul li{
@@ -334,11 +347,13 @@ display: block;
 }
 .starLb{
   width:598px;
+  
   border-left: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
 }
 .starLb ul li {
-  height:340px;
+  height:310px;
+  padding-top:30px;
 }
 .starLb ul li img{
    display: block;
@@ -355,6 +370,7 @@ display: block;
 }
 .starRb{
    width:599px;
+   padding-top:10px;
    border-right: 1px solid #e0e0e0;
 }
 /* memberarea开始 */
@@ -373,8 +389,8 @@ display: block;
 .morewelfare{
    position: absolute;
    left:50%;
+   top:145px;
    margin-left:-35px;
-   top:135px;
    font-size:12px;
    color:#a5b2d8;
 }
@@ -394,7 +410,8 @@ display: block;
 .memberarea ul li img{
     display: block;
     margin-left:50px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    position: relative;
 }
 .memberarea ul li .inset{
    display: block;
